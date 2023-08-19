@@ -1,0 +1,42 @@
+.star-card {
+    width: 190px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    background: #050E12;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.star-card:hover {
+    transform: scale(1.1);
+}
+
+.star-card__poster img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.star-card__name {
+    padding: 5px;
+    color: #B6B6B6;
+    font-family: var(--inter-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.star-card__role {
+    padding: 5px;
+    color: #828282;
+    font-family: var(--inter-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

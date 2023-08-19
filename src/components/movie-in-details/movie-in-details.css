@@ -1,0 +1,146 @@
+.film-details__container {
+    width: 100vw;
+}
+
+.film-details__banner img {
+    width: 100%;
+}
+
+.film-details__poster img {
+    width: 100%;
+}
+
+.film-details__info {
+    width: 89%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.film-details__info-text {
+    align-self: center;
+}
+
+.film-details__poster {
+    margin-top: -165px;
+}
+
+.info-text__title {
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.info-text__sub-title li {
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sub-title__rating img {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 5px;
+    margin-left: -6px;
+}
+
+.film-details__overview {
+    width: 89%;
+    margin: 20px auto 0px auto;
+}
+
+.overview__title{
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.overview__text {
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.film-details__sessions {
+    width: 89%;
+    margin: 20px auto 0px auto;
+}
+
+.sessions__title {
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sessions__info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.info__session {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid white;
+    text-align: center;
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.info__session:hover {
+    color: #1A1F38;
+    border: 2px solid #1A1F38;
+}
+
+.info__no-sessions {
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buy-a-ticket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.buy-a-ticket-btn {
+    width: 15%;
+    font-family: var(--roboto-font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.chosen-session {
+    color: #1A1F38;
+    border: 2px solid #1A1F38;
+}

@@ -1,0 +1,40 @@
+.nav-menu__search {
+    width: 250px;
+    height: 30px;
+    position: relative;
+}
+
+.nav-menu__search input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(196, 196, 196, 0.30);
+    color: #fff;
+    padding: 5px;
+    font-family: var(--roboto-font);
+}
+
+.icon {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 3px;
+    right: 5px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.search__results li {
+    position: relative;
+    z-index: 100;
+    background: #1A1F38;
+    color: white;
+    padding: 5px;
+    transition: all 0.2s
+}
+
+.search__results li:hover {
+    color: #20328a;
+}

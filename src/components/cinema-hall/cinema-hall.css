@@ -1,0 +1,75 @@
+.ticket__cinema-hall {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.cinema-hall__screen {
+    height: 20px;
+    border-radius: 100px 100px 0 0;
+    border-top: 5px solid blue;
+    border-left: 5px solid blue;
+    border-right: 5px solid blue;
+    text-align: center;
+    color: blue;
+    margin-top: 20px;
+}
+
+.cinema-hall__seats {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 5px;
+}
+
+.seat {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background: #1A1F38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.seat-reserved {
+    background-color: red;
+    cursor: default;
+}
+
+.seat-chosen {
+    background-color: green;
+}
+
+.ticket__session-info {
+    width: 88%;
+    margin: 0 auto;
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.ticket__session-info span {
+    text-decoration: underline;
+}
+
+.session-info__header {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.session-info__seats {
+    margin: 10px 0;
+}
+
+.session-info__film-total {
+    margin-bottom: 20px;
+}
+
+.btn-close {
+    display: none;
+}

@@ -1,0 +1,110 @@
+.actor-details__container {
+    width: 100vw;
+    padding-top: 30px;
+}
+
+.actor-details__info {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    gap: 30px;
+}
+
+.info__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text__name {
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.info__poster {
+    width: 30%;
+}
+
+.info__poster img {
+    width: 100%;
+}
+
+.text__imdb-link {
+    width: 80px;
+    margin-top: 15px;
+}
+
+.text__imdb-link img {
+    width: 100%;
+}
+
+.actor-details__biography {
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.biography__header {
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.biography__text {
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.actor-details__films {
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.films__header {
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.films__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 190px);
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.film-card__rating img {
+    width: 20px;
+    padding-bottom: 3px;
+}
+
+.details {
+    height: 390px;
+}

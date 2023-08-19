@@ -1,0 +1,55 @@
+.home-page {
+    width: 100%;
+}
+
+.slider__img {
+    height: 88vh;
+}
+
+.slider__img img {
+    width: 100%;
+}
+
+.carousel-caption {
+    text-align: left;
+    -webkit-text-stroke: 1px #181e3f;
+}
+
+.slider__title {
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.slider__overview {
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.slider__rating {
+    position: relative;
+    color: #FFF;
+    font-family: var(--roboto-font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.slider__rating img {
+    padding-bottom: 3px;
+    padding-right: 4px;
+}
+
+@media screen and (max-width: 992px) {
+    .slider__img {
+        height: 100%;
+    }
+}

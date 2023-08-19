@@ -1,0 +1,36 @@
+.nav-menu {
+    width: 100%;
+    background-color: #1A1F38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.nav-menu__logo {
+    color: #fff;
+    font-family: var(--inter-font);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-menu__my-tickets {
+    color: #1A1F38;
+    background: #FFF;
+    font-family: var(--inter-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: all 0.4s;
+    border: solid white 1px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-menu__my-tickets:hover {
+    color:#0c2bc756
+}
+

@@ -1,0 +1,41 @@
+footer {
+    width: 100%;
+    background: #1f1e1e;
+    margin-top: 35px;
+}
+
+.footer__container {
+    width: 88%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.copyright__header {
+    color: #E2E2E2;
+    font-family: var(--inter-font);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.copyright__logo {
+    font-weight: 700;
+}
+
+.copyright__team {
+    color: #E2E2E2;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.copyright__team > span {
+    text-decoration: underline;
+}

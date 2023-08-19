@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --inter-font: 'Inter', sans-serif;
+    --roboto-font: 'Roboto', sans-serif;
+    --grey-color: #828282;
+}
+
+body {
+    background: #000;
+    overflow-x: hidden;
+}

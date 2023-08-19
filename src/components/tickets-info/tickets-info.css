@@ -1,0 +1,55 @@
+.my-ticket__ticket-info {
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.ticket-info__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.session-info {
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-weight: 400;
+}
+
+.session-info span {
+    text-decoration: underline;
+}
+
+.film-info {
+    width: 25%;
+    text-align: center;
+}
+
+.film-info__poster img {
+    max-width: 330px;
+    min-width: 100%
+}
+
+.film-info__title {
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+
+.no-tickets {
+    text-align: center;
+    color: #EDEDED;
+    font-family: var(--inter-font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
