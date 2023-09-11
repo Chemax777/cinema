@@ -10,6 +10,7 @@ import { getData, getFilms } from "../../methods"
 import Footer from "../../components/footer"
 
 
+
 function Home({ filmsInfo, starsInfo }) {
     const [randomMovies, setRandomMovies] = useState([])
 

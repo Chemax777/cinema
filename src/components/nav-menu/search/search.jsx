@@ -3,7 +3,7 @@ import SearchIcon from '../../../img/search-icon.svg'
 import { useEffect, useState } from 'react'
 import { getData } from '../../../methods'
 import { Link } from 'react-router-dom'
-import { nanoid } from 'nanoid'
+
 
 function Search() {
     const [search, setSearch] = useState('')
@@ -16,7 +16,7 @@ function Search() {
     useEffect(() => {
         getData(`https://api.themoviedb.org/3/search/movie?query=${search}&include_adult=false&language=en-US&page=1`)
             .then(data => setSearchResult(data.results))
-    }, [searchResult])
+    }, [search])
 
     return (
         <div className="nav-menu__search">

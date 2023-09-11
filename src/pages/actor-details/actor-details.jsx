@@ -4,9 +4,12 @@ import { getData } from "../../methods"
 import NavMenu from "../../components/nav-menu"
 import ActorInDetails from "../../components/actor-in-details"
 import Footer from "../../components/footer"
+import Loader from "../../components/loader"
 
 function ActorDetails({stars}) {
     const { id } = useParams()
+
+    const [loading, setLoading] = useState(true)
 
     const [currentActor, setCurrentActor] = useState({})
     const [actorFilms, setActorFilms] = useState([])
@@ -16,10 +19,12 @@ function ActorDetails({stars}) {
             .then(data => {
                 setCurrentActor(data)
             })
+    setLoading(false)
     }, [])
 
 
     return (
+        loading ? <Loader/> :
         <div className="actor-details__page">
             <NavMenu></NavMenu>
             <ActorInDetails currentActor={currentActor} stars = {stars}></ActorInDetails>

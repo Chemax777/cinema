@@ -11,10 +11,13 @@ import ActorDetails from "../../pages/actor-details"
 import Ticket from "../../pages/ticket"
 import CurrentTicketContext from "../../context/ticketContext"
 import MyTickets from "../../pages/my-tickets"
+import Loader from "../../components/loader"
 
 
 
 function App() {
+    const [loading, setLoading] = useState(true)
+
     const [films, setFilms] = useState([])
     const [stars, setStars] = useState([])
 
@@ -52,8 +55,12 @@ function App() {
             .catch((err) => {
                 localStorage.error = err
             })
+
+        setLoading(false)
     }, [])
     return (
+        loading ? 
+        <Loader/> :
         <>
             <CurrentTicketContext.Provider value={value}>
                 <BrowserRouter>
