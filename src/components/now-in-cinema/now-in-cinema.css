@@ -34,6 +34,9 @@
         text-align: center;
         padding: 0;
     }
+    .now-in-cinema__films-info {
+        padding: 0 1rem;
+    }
 }
 @media screen and (max-width:480px) {
     .header{

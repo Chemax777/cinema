@@ -19,3 +19,9 @@
     justify-content: center;
     gap: 25px
 }
+
+@media screen and (max-width: 768px) {
+    .popular-stars__info {
+        padding: 0 1rem;
+    }
+}
