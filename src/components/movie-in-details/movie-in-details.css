@@ -155,6 +155,10 @@
     border: 2px solid #1A1F38;
 }
 
+.no-marg {
+    margin: 2rem 0 0 0;
+}
+
 @media screen and (max-width: 768px) {
     .film-details__info {
         margin-top: 2rem;

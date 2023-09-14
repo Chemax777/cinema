@@ -43,11 +43,12 @@ function MovieInDetails({ movie, curSessions }) {
 
     return (
         <div className="film-details__container">
+            {backdrop_path ?
             <div className="film-details__banner">
                 <img src={`https://image.tmdb.org/t/p/w1280${backdrop_path}`} alt={`${title} banner`} />
-            </div>
+            </div> : null}
             <div className="film-details__info">
-                <div className="film-details__poster">
+                <div className={`${backdrop_path ? 'film-details__poster' : 'film-details__poster no-marg'}`}>
                     <img src={`https://www.themoviedb.org/t/p/w220_and_h330_face${poster_path}`} alt={`${title} poster`} />
                 </div>
                 <div className="film-details__info-text">
