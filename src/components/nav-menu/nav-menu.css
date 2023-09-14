@@ -16,6 +16,13 @@
     line-height: normal;
 }
 
+.nav-menu__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
 .nav-menu__my-tickets {
     color: #1A1F38;
     background: #FFF;
@@ -31,6 +38,85 @@
 }
 
 .nav-menu__my-tickets:hover {
-    color:#0c2bc756
+    color: #0c2bc756
 }
 
+/* Гамбургер иконка */
+.menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    display: none;
+}
+
+.menu-btn span {
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(13,110,123);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+@media screen and (max-width: 700px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: space-between;
+    }
+    .nav-menu-logo-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-menu__items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .nav-menu__my-tickets {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .nav-menu__items {
+        display: none;
+    }
+
+    .nav-menu__items.active{
+        display: block;
+    }
+}
