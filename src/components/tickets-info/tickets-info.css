@@ -35,9 +35,11 @@
     width: 25%;
     text-align: center;
 }
+
 .film-info__poster {
     width: 100%;
 }
+
 .film-info__poster img {
     max-width: 100px;
     min-width: 100%
@@ -50,7 +52,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    
+
 }
 
 .no-tickets {
@@ -61,4 +63,21 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+@media screen and (max-width:480px) {
+    .ticket-info__item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .session-info {
+        order: 2;
+    }
+
+    .film-info {
+        width: 50%;
+    }
 }

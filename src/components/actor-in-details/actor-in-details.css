@@ -108,3 +108,63 @@
 .details {
     height: 390px;
 }
+
+@media screen and (max-width: 600px) {
+    .actor-details__info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info__poster {
+        width: 50%;
+    }
+
+    .info__text {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .text__imdb-link {
+        margin: 15px auto 0 auto;
+    }
+
+    .biography__header {
+        text-align: center;
+    }
+
+    .films__header {
+        text-align: center;
+    }
+    .films__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .info__text {
+        font-size: 1.125rem;
+    }
+
+    .text__name {
+        font-size: 1.6875rem;
+    }
+
+    .biography__text {
+        font-size: 1.125rem;
+        padding: 0 1rem;
+    }
+
+    .biography__header {
+        font-size: 1.6875rem;
+    }
+
+    .films__header {
+        font-size: 1.6875rem;
+    }
+}

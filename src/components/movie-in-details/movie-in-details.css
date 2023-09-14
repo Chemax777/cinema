@@ -44,6 +44,16 @@
     line-height: normal;
 }
 
+.sub-title__genres {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.sub-title__genres span {
+    display: block;
+}
+
 .sub-title__rating img {
     width: 30px;
     height: 30px;
@@ -56,7 +66,7 @@
     margin: 20px auto 0px auto;
 }
 
-.overview__title{
+.overview__title {
     color: #EDEDED;
     font-family: var(--inter-font);
     font-size: 2.25rem;
@@ -143,4 +153,53 @@
 .chosen-session {
     color: #1A1F38;
     border: 2px solid #1A1F38;
+}
+
+@media screen and (max-width: 768px) {
+    .film-details__info {
+        margin-top: 2rem;
+    }
+
+    .film-details__info-text {
+        width: 60%;
+        font-size: 1.2rem;
+    }
+
+    .film-details__poster {
+        margin: 0;
+        min-width: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .film-details__info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sub-title__genres {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .film-details__overview {
+        text-align: center;
+    }
+
+    .overview__text {
+        font-size: 1.6875rem;
+        padding: 0 1rem;
+    }
+
+    .film-details__sessions {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .film-details__banner {
+        display: none;
+    }
 }
