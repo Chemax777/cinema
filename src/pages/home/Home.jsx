@@ -8,7 +8,7 @@ import starIcon from '../../img/star-icon.svg'
 import { useEffect, useState } from "react"
 import { getData, getFilms } from "../../methods"
 import Footer from "../../components/footer"
-
+import UpBtn from "../../components/up-btn/up-btn"
 
 
 function Home({ filmsInfo, starsInfo }) {
@@ -58,6 +58,7 @@ function Home({ filmsInfo, starsInfo }) {
             <NowInCinema info={filmsInfo}></NowInCinema>
             <PopularFilmStar info={starsInfo}></PopularFilmStar>
             <Footer></Footer>
+            <UpBtn></UpBtn>
         </div>
     )
 }

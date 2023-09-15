@@ -12,7 +12,7 @@ function NavMenu() {
     }
 
     return (
-        <nav className="nav-menu">
+        <nav className="nav-menu" id="up">
             <div className="nav-menu-logo-btn">
                 <Link to={`/`}>
                     <div className="nav-menu__logo">Vilm</div>

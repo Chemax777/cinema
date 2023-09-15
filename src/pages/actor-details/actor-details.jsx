@@ -5,6 +5,7 @@ import NavMenu from "../../components/nav-menu"
 import ActorInDetails from "../../components/actor-in-details"
 import Footer from "../../components/footer"
 import Loader from "../../components/loader"
+import UpBtn from "../../components/up-btn/up-btn"
 
 function ActorDetails({stars}) {
     const { id } = useParams()
@@ -29,7 +30,9 @@ function ActorDetails({stars}) {
             <NavMenu></NavMenu>
             <ActorInDetails currentActor={currentActor} stars = {stars}></ActorInDetails>
             <Footer></Footer>
+            <UpBtn></UpBtn>
         </div>
+        
     )
 }
 

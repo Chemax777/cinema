@@ -3,6 +3,7 @@ import NavMenu from "../../components/nav-menu"
 import CinemaHall from "../../components/cinema-hall"
 import Footer from "../../components/footer"
 import Loader from "../../components/loader"
+import UpBtn from "../../components/up-btn/up-btn"
 
 function Ticket() {
     const [loading, setLoading] = useState(true)
@@ -15,6 +16,7 @@ function Ticket() {
                 <NavMenu></NavMenu>
                 <CinemaHall></CinemaHall>
                 <Footer></Footer>
+                <UpBtn></UpBtn>
             </div>
     )
 }

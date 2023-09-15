@@ -5,6 +5,7 @@ import { getData } from "../../methods";
 import MovieInDetails from "../../components/movie-in-details";
 import Footer from "../../components/footer";
 import Loader from "../../components/loader";
+import UpBtn from "../../components/up-btn/up-btn";
 
 function FilmDetails({films}) {
     const { id } = useParams()
@@ -36,6 +37,7 @@ function FilmDetails({films}) {
             <NavMenu></NavMenu>
             <MovieInDetails movie={currentMovie} curSessions={currentSessions}></MovieInDetails>
             <Footer></Footer>
+            <UpBtn></UpBtn>
         </div>
     )
 }
