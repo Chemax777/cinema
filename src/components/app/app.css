@@ -25,3 +25,10 @@ body {
     background: #000;
     overflow-x: hidden;
 }
+
+@media screen and (min-width: 1440px) {
+    #root {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
