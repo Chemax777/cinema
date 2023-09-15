@@ -12,11 +12,14 @@
 
 .carousel-caption {
     text-align: left;
-    -webkit-text-stroke: 1px #181e3f;
+    padding: 1rem;
+    background: #3a3841e5;
+    color: #5a6cc0;
+    border-radius: 10px;
+    /* -webkit-text-stroke: 1px #000; */
 }
 
 .slider__title {
-    color: #FFF;
     font-family: var(--roboto-font);
     font-size: 4rem;
     font-style: normal;
@@ -25,7 +28,6 @@
 }
 
 .slider__overview {
-    color: #FFF;
     font-family: var(--roboto-font);
     font-size: 1.5rem;
     font-style: normal;
