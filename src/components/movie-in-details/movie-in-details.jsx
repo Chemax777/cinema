@@ -70,7 +70,7 @@ function MovieInDetails({ movie, curSessions }) {
                 <p className='overview__text'>{overview}</p>
             </div>
             <div className='film-details__sessions'>
-                <h3 className="sessions__title">Available sessions {`${today.getDate()}-${today.getMonth() + 1}-${today.getFullYear()}`}</h3>
+                <h3 className="sessions__title">Available sessions {`${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`}</h3>
                 <div className="sessions__info">
                     {
                         Array.isArray(curSessions) && curSessions.length > 0 ?
