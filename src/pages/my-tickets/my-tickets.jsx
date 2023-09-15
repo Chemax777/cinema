@@ -10,7 +10,7 @@ function MyTickets() {
 
     useEffect(() => {
         setLoading(false)
-    })
+    }, [])
     return (
         loading ? <Loader /> :
             <div className="my-tickets__page">
