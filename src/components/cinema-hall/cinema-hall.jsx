@@ -12,7 +12,7 @@ function CinemaHall() {
     const [session, setSession] = useState(ticket.currentTicket)
     const [seats, setSeats] = useState([])
     const [showModal, setShowModal] = useState(false)
-    
+
 
     const handleShow = () => setShowModal(true);
 
@@ -73,6 +73,10 @@ function CinemaHall() {
         setSeats(createSeats(10, 14))
     }, [])
 
+    useEffect(() => {
+        localStorage.setItem('localTickets', JSON.stringify(ticket))
+    }, [ticket])
+
     return (
         <>
             <div className="ticket__cinema-hall">
@@ -119,7 +123,7 @@ function CinemaHall() {
             {
                 showModal && <ModalWindow showModal={showModal}></ModalWindow>
             }
-            
+
         </>
     )
 }
